@@ -1,0 +1,68 @@
+$couleur1: #f05f40;
+$couleur2: #fafafa;
+body {
+    background-color: $couleur2;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.espace-bloc {
+    padding: 50px 0;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+
+/* DEBUT NAV */
+
+.navbar-default {
+    background-color: white;
+    border: none;
+    .navbar-brand {
+        color: $couleur1;
+    }
+    .navbar-nav > li > a {
+        color: black;
+    }
+}
+
+
+/* FIN NAV */
+
+/* DEBUT SECTION */
+section {
+    background: url(../images/bg-intro.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.fond-accordeon {
+    background-color: white;
+}
+
+.filmUn {
+    background-color: #135683;
+    color: $couleur2;
+}
+
+.filmDeux {
+    background-color: darkred;
+    color: $couleur2;
+}
+/* FIN SECTION */
+
+
+/* DEBUT FOOTER */
+footer {
+    background-color: #eeeeee;
+    color: $couleur1;
+}
+/* FIN FOOTER */

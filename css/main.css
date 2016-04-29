@@ -1,0 +1,52 @@
+body {
+  background-color: #fafafa; }
+
+.no-padding {
+  padding: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.espace-bloc {
+  padding: 50px 0; }
+
+.carousel-caption {
+  bottom: 20%; }
+
+/* DEBUT NAV */
+.navbar-default {
+  background-color: white;
+  border: none; }
+  .navbar-default .navbar-brand {
+    color: #f05f40; }
+  .navbar-default .navbar-nav > li > a {
+    color: black; }
+
+/* FIN NAV */
+/* DEBUT SECTION */
+section {
+  background: url(../images/bg-intro.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+.fond-accordeon {
+  background-color: white; }
+
+.filmUn {
+  background-color: #135683;
+  color: #fafafa; }
+
+.filmDeux {
+  background-color: darkred;
+  color: #fafafa; }
+
+/* FIN SECTION */
+/* DEBUT FOOTER */
+footer {
+  background-color: #eeeeee;
+  color: #f05f40; }
+
+/* FIN FOOTER */
+
+/*# sourceMappingURL=main.css.map */

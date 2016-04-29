@@ -5,3 +5,8 @@ $(function () {
         collapsible: true
     });
 });
+
+//DATE PICKER
+$(function () {
+    $("#datepicker").datepicker();
+});
