@@ -6,6 +6,10 @@ body {
     background-color: $couleur2;
 }
 
+section a{
+    color: $couleur1;
+}
+
 .no-padding {
     padding: 0;
 }
@@ -14,12 +18,7 @@ body {
     margin: 0;
 }
 
-.espace-bloc {
-    padding: 50px 0;
-}
-
-
- .carousel-caption {
+.carousel-caption {
     bottom: 20%;
 } 
 
@@ -43,11 +42,13 @@ body {
 
 /* DEBUT SECTION */
 
-section {
-    background: url(../images/bg-intro.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+section h3{
+    color: $couleur1;
+    text-align: center;
+}
+
+section p{
+    text-align: justify;
 }
 
 .fond-accordeon {
@@ -123,6 +124,7 @@ background-color: $couleur1;
 footer {
     background-color: $couleur1;
     color: $couleur2;
+    padding: 100px 0;
 }
 
 

@@ -15,6 +15,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="app/public/libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/public/libs/jquery/dist/jquery-ui.min.css">
+    <link rel="stylesheet" href="app/public/libs/font-awesome/css/font-awesome.min.css">
+
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -40,9 +42,11 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">LIEN NAVIGATION</a></li>
-                    <li><a href="#">LIEN NAVIGATION</a></li>
-                    <li><a href="#">LIEN NAVIGATION</a></li>
+                    <li><a href="#"><i class="fa fa-home"></i> ACCUEIL</a></li>
+                    <li><a href="#"><i class="fa fa-film"></i> FILMS</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i> CONTACT</a></li>
+
+
                 </ul>
             </div>
         </div>
@@ -113,73 +117,69 @@
                 <div id="accordion" class="col-md-2">
                     <h3>ACTION</h3>
                     <ul>
-                        <a href="#">
+                        <a href="#captain-america">
                             <li>CAPTAIN AMERICA : CIVIL WAR</li>
                         </a>
-                        <a href="#">
+                        <a href="#batman-superman">
                             <li>BATMAN VS SUPERMAN : L'AUBE DE LA JUSTICE</li>
                         </a>
 
-                        <a href="#">
+                        <a href="#londre">
                             <li>
                                 LA CHUTE DE LONDRES</li>
                         </a>
 
-                        <a href="#">
+                        <a href="#divergente">
                             <li>DIVERGENTE 3 : AU-DELA DU MUR</li>
                         </a>
-
-
                     </ul>
 
                     <h3>ANIMATION</h3>
                     <ul>
-                        <a href="#">
+                        <a href="#panda">
                             <li>KUNG FU PANDA 3</li>
                         </a>
                     </ul>
 
                     <h3>AVENTURE</h3>
                     <ul>
-
-                        <a href="#">
+                        <a href="#divergente">
                             <li>DIVERGENTE 3 : AU-DELA DU MUR</li>
                         </a>
-                        <a href="#">
+                        <a href="#panda">
                             <li>KUNG FU PANDA 3</li>
                         </a>
                     </ul>
 
                     <h3>COMEDIE</h3>
                     <ul>
-                        <a href="#">
+                        <a href="#five">
                             <li>FIVE</li>
                         </a>
-                        <a href="#">
+                        <a href="#saint-amour">
                             <li>SAINT AMOUR</li>
                         </a>
-                        <a href="#">
+                        <a href="#lady-in-the-van">
                             <li>THE LADY IN THE VAN</li>
                         </a>
 
-                        <a href="#">
+                        <a href="#panda">
                             <li>KUNG FU PANDA 3</li>
                         </a>
                     </ul>
+
                     <h3>EPROUVANTE-HORREUR</h3>
                     <ul>
-                        <a href="#">
+                        <a href="#boy">
                             <li>THE BOY</li>
                         </a>
-
                     </ul>
 
                     <h3>SCIENCE FICTION</h3>
                     <ul>
-                        <a href="#">
+                        <a href="#divergente">
                             <li>DIVERGENTE 3 : AU-DELA DU MUR</li>
                         </a>
-
                     </ul>
                 </div>
 
@@ -187,7 +187,7 @@
 
                 <!-- debut film -->
                 <div class="col-md-10">
-                    <div class="row fond-gris-fonce">
+                    <div id="captain-america" class="row fond-gris-fonce">
                         <div class="col-md-3 no-padding">
                             <img src="images/affiche/captain-america.jpg" alt="" class="img-responsive">
                         </div>
@@ -195,8 +195,8 @@
                             <h3>CAPTAIN AMERICA : CIVIL WAR</h3>
                             <ul>
                                 <li>Date de sortie 27 avril 2016 (2h 28min)</li>
-                                <li>De Anthony Russo, Joe Russo</li>
-                                <li>Avec Chris Evans, Robert Downey Jr, Scarlett Johansson, ...</li>
+                                <li>De <a href="#">Anthony Russo</a>, <a href="#">Joe Russo</a></li>
+                                <li>Avec <a href="#">Chris Evans</a>, <a href="#">Robert Downey Jr</a>, <a href="#">Scarlett Johansson</a>, ...</li>
                                 <li>Genres Action, Fantastique</li>
                             </ul>
 
@@ -211,7 +211,7 @@
                         </div>
                     </div>
 
-                    <div class="row fond-gris-clair">
+                    <div id="batman-superman" class="row fond-gris-clair">
                         <div class="col-md-3">
                             <!--DATE PICKER-->
 
@@ -220,8 +220,8 @@
                             <h3>BATMAN VS SUPERMAN : L'AUBE DE LA JUSTICE</h3>
                             <ul>
                                 <li>Date de sortie 23 mars 2016 (2h 33min)</li>
-                                <li>De Zack Snyder</li>
-                                <li>Avec Ben Affleck, Henry Cavill, Jesse Eisenberg, ...</li>
+                                <li>De <a href="#">Zack Snyder</a></li>
+                                <li>Avec <a href="#">Ben Affleck</a>, <a href="#">Henry Cavill</a>, <a href="#">Jesse Eisenberg</a>, ...</li>
                                 <li>Genres Action, Fantastique</li>
                             </ul>
 
@@ -236,7 +236,7 @@
                     </div>
 
 
-                    <div class="row fond-gris-fonce">
+                    <div id="five" class="row fond-gris-fonce">
                         <div class="col-md-3 no-padding">
                             <img src="images/affiche/five.jpg" alt="" class="img-responsive">
                         </div>
@@ -244,8 +244,8 @@
                             <h3>FIVE</h3>
                             <ul>
                                 <li>Date de sortie 30 mars 2016 (1h 42min)</li>
-                                <li>De Igor Gotesman</li>
-                                <li> Avec Pierre Niney, François Civil, Igor Gotesman, ...</li>
+                                <li>De <a href="#">Igor Gotesman</a></li>
+                                <li> Avec <a href="#">Pierre Niney</a>, <a href="#">François Civil</a>, <a href="#">Igor Gotesman</a>, ...</li>
                                 <li>Genre Comédie</li>
                             </ul>
 
@@ -260,7 +260,7 @@
                         </div>
                     </div>
 
-                    <div class="row fond-gris-clair">
+                    <div id="boy" class="row fond-gris-clair">
                         <div class="col-md-3">
                             <!--DATE PICKER-->
 
@@ -269,8 +269,8 @@
                             <h3>THE BOY</h3>
                             <ul>
                                 <li>Date de sortie 27 janvier 2016 (1h 37min)</li>
-                                <li>De William Brent Bell</li>
-                                <li>Avec Lauren Cohan, Rupert Evans, Ben Robson, ...</li>
+                                <li>De <a href="#">William Brent Bell</a></li>
+                                <li>Avec <a href="#">Lauren Cohan</a>, <a href="#">Rupert Evans</a>, <a href="#">Ben Robson</a>, ...</li>
                                 <li> Genre Epouvante-horreur</li>
                             </ul>
 
@@ -286,7 +286,7 @@
 
 
 
-                    <div class="row fond-gris-fonce">
+                    <div id="londre" class="row fond-gris-fonce">
                         <div class="col-md-3 no-padding">
                             <img src="images/affiche/londre.jpg" alt="" class="img-responsive">
                         </div>
@@ -294,8 +294,8 @@
                             <h3>LA CHUTE DE LONDRES</h3>
                             <ul>
                                 <li>Date de sortie 2 mars 2016 (1h 39min)</li>
-                                <li>De Babak Najafi</li>
-                                <li> Avec Gerard Butler, Aaron Eckhart, Morgan Freeman, ...</li>
+                                <li>De <a href="#">Babak Najafi</a></li>
+                                <li> Avec <a href="#">Gerard Butler</a>, <a href="#">Aaron Eckhart</a>, <a href="#">Morgan Freeman</a>, ...</li>
                                 <li>Genre Action</li>
                             </ul>
 
@@ -312,7 +312,7 @@
 
 
 
-                    <div class="row fond-gris-clair">
+                    <div id="saint-amour" class="row fond-gris-clair">
                         <div class="col-md-3">
                             <!--DATE PICKER-->
 
@@ -321,8 +321,8 @@
                             <h3>SAINT AMOUR</h3>
                             <ul>
                                 <li>Date de sortie 2 mars 2016 (1h 41min)</li>
-                                <li>De Benoît Delépine, Gustave Kervern</li>
-                                <li>Avec Gérard Depardieu, Benoît Poelvoorde, Vincent Lacoste, ...</li>
+                                <li>De <a href="#">Benoît Delépine</a>, <a href="#">Gustave Kervern</a></li>
+                                <li>Avec <a href="#">Gérard Depardieu</a>, <a href="#">Benoît Poelvoorde</a>, <a href="#">Vincent Lacoste</a>, ...</li>
                                 <li> Genres Comédie, Drame</li>
                             </ul>
 
@@ -338,7 +338,7 @@
 
 
 
-                    <div class="row fond-gris-fonce">
+                    <div id="lady-in-the-van" class="row fond-gris-fonce">
                         <div class="col-md-3 no-padding">
                             <img src="images/affiche/the%20lady.jpeg" alt="" class="img-responsive">
                         </div>
@@ -346,8 +346,8 @@
                             <h3>THE LADY IN THE VAN</h3>
                             <ul>
                                 <li>Date de sortie 16 mars 2016 (1h 44min)</li>
-                                <li>De Nicholas Hytner</li>
-                                <li>Avec Maggie Smith, Alex Jennings, Jim Broadbent, ...</li>
+                                <li>De <a href="#">Nicholas Hytner</a></li>
+                                <li>Avec <a href="#">Maggie Smith</a>, <a href="#">Alex Jennings</a>, <a href="#">Jim Broadbent</a>, ...</li>
                                 <li>Genres Comédie dramatique, Biopic</li>
                             </ul>
 
@@ -364,7 +364,7 @@
 
 
 
-                    <div class="row fond-gris-clair">
+                    <div id="panda" class="row fond-gris-clair">
                         <div class="col-md-3">
                             <!--DATE PICKER-->
 
@@ -373,8 +373,8 @@
                             <h3>KUNG FU PANDA 3</h3>
                             <ul>
                                 <li>Date de sortie 30 mars 2016 (1h 35min)</li>
-                                <li>De Jennifer Yuh, Alessandro Carloni</li>
-                                <li>Avec Manu Payet, Pierre Arditi, Alison Wheeler, ...</li>
+                                <li>De <a href="#">Jennifer Yuh</a>, <a href="#">Alessandro Carloni</a></li>
+                                <li>Avec <a href="#">Manu Payet</a>, <a href="#">Pierre Arditi</a>, <a href="#">Alison Wheeler</a>, ...</li>
                                 <li> Genres Animation, Aventure, Comédie</li>
                             </ul>
 
@@ -388,7 +388,7 @@
                         </div>
                     </div>
 
-                    <div class="row fond-gris-fonce">
+                    <div id="divergente" class="row fond-gris-fonce">
                         <div class="col-md-3 no-padding">
                             <img src="images/affiche/divergente.jpg" alt="" class="img-responsive">
                         </div>
@@ -396,8 +396,8 @@
                             <h3>DIVERGENTE 3 : AU-DELA DU MUR</h3>
                             <ul>
                                 <li>Date de sortie 9 mars 2016 (2h 00min)</li>
-                                <li>De Robert Schwentke</li>
-                                <li>Avec Shailene Woodley, Theo James, Jeff Daniels, ...</li>
+                                <li>De <a href="#">Robert Schwentke</a></li>
+                                <li>Avec <a href="#">Shailene Woodley</a>, <a href="#">Theo James</a>, <a href="#">Jeff Daniels</a>, ...</li>
                                 <li>Genres Science fiction, Aventure, Action</li>
                             </ul>
 
@@ -422,7 +422,7 @@
 
 
     <!-- DEBUT FOOTER -->
-    <footer class="espace-bloc">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">

@@ -1,14 +1,14 @@
 body {
   background-color: #fafafa; }
 
+section a {
+  color: #f05f40; }
+
 .no-padding {
   padding: 0; }
 
 .no-margin {
   margin: 0; }
-
-.espace-bloc {
-  padding: 50px 0; }
 
 .carousel-caption {
   bottom: 20%; }
@@ -24,11 +24,12 @@ body {
 
 /* FIN NAV */
 /* DEBUT SECTION */
-section {
-  background: url(../images/bg-intro.jpg) no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; }
+section h3 {
+  color: #f05f40;
+  text-align: center; }
+
+section p {
+  text-align: justify; }
 
 .fond-accordeon {
   background-color: #f6f6f6; }
@@ -85,7 +86,8 @@ section {
 /* DEBUT FOOTER */
 footer {
   background-color: #f05f40;
-  color: #fafafa; }
+  color: #fafafa;
+  padding: 100px 0; }
 
 /* FIN FOOTER */
 
