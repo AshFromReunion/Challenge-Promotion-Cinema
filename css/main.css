@@ -34,7 +34,8 @@ section {
   background-color: #f6f6f6; }
 
 .ui-accordion .ui-accordion-header {
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 40px; }
 
 .ui-state-default {
   border: none;
@@ -42,6 +43,23 @@ section {
   .ui-state-default:hover {
     background-color: #f05f40;
     color: #fafafa; }
+
+.ui-widget-content {
+  border: none; }
+
+.ui-accordion .ui-accordion-content {
+  padding: 0; }
+
+#accordion ul a li {
+  padding: 40px 20px;
+  border-bottom: 1px solid #c5c5c5; }
+
+#accordion ul a li:hover {
+  background-color: #f05f40;
+  color: #fafafa; }
+
+.ui-widget-content a {
+  text-decoration: none; }
 
 .ui-state-active,
 .ui-widget-content .ui-state-active,
