@@ -31,21 +31,41 @@ section {
   background-position: center; }
 
 .fond-accordeon {
-  background-color: white; }
+  background-color: #f6f6f6; }
 
-.filmUn {
-  background-color: #135683;
+.ui-accordion .ui-accordion-header {
+  margin-top: 0; }
+
+.ui-state-default {
+  border: none;
+  border-bottom: 1px solid #c5c5c5; }
+  .ui-state-default:hover {
+    background-color: #f05f40;
+    color: #fafafa; }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  background-color: #f05f40;
+  border: none;
+  border-radius: 0; }
+
+.ui-corner-all {
+  border-radius: 0; }
+
+.fond-gris-fonce {
+  background-color: #222222;
   color: #fafafa; }
 
-.filmDeux {
-  background-color: darkred;
+.fond-gris-clair {
+  background-color: #444444;
   color: #fafafa; }
 
 /* FIN SECTION */
 /* DEBUT FOOTER */
 footer {
-  background-color: #eeeeee;
-  color: #f05f40; }
+  background-color: #f05f40;
+  color: #fafafa; }
 
 /* FIN FOOTER */
 

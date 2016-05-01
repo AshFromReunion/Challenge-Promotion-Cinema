@@ -1,5 +1,7 @@
 $couleur1: #f05f40;
 $couleur2: #fafafa;
+$couleur3: #222222;
+$couleur4: #444444;
 body {
     background-color: $couleur2;
 }
@@ -16,9 +18,10 @@ body {
     padding: 50px 0;
 }
 
-.carousel-caption {
+
+ .carousel-caption {
     bottom: 20%;
-}
+} 
 
 
 /* DEBUT NAV */
@@ -37,32 +40,65 @@ body {
 
 /* FIN NAV */
 
+
 /* DEBUT SECTION */
+
 section {
     background: url(../images/bg-intro.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
+
 .fond-accordeon {
-    background-color: white;
+    background-color: #f6f6f6;
 }
 
-.filmUn {
-    background-color: #135683;
+.ui-accordion .ui-accordion-header {
+    margin-top: 0;
+}
+
+.ui-state-default {
+    border: none;
+    border-bottom: 1px solid #c5c5c5;
+    &:hover{
+            background-color: $couleur1;
+    color: $couleur2;
+    }
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    background-color: $couleur1;
+    border: none;
+    border-radius: 0;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+.fond-gris-fonce {
+    background-color: $couleur3;
     color: $couleur2;
 }
 
-.filmDeux {
-    background-color: darkred;
+.fond-gris-clair {
+    background-color: $couleur4;
     color: $couleur2;
 }
+
+
 /* FIN SECTION */
 
 
 /* DEBUT FOOTER */
+
 footer {
-    background-color: #eeeeee;
-    color: $couleur1;
+    background-color: $couleur1;
+    color: $couleur2;
 }
+
+
 /* FIN FOOTER */
