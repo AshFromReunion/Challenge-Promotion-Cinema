@@ -6,7 +6,7 @@ body {
     background-color: $couleur2;
 }
 
-section a{
+section a {
     color: $couleur1;
 }
 
@@ -20,7 +20,7 @@ section a{
 
 .carousel-caption {
     bottom: 20%;
-} 
+}
 
 
 /* DEBUT NAV */
@@ -42,12 +42,12 @@ section a{
 
 /* DEBUT SECTION */
 
-section h3{
+section h3 {
     color: $couleur1;
     text-align: center;
 }
 
-section p{
+section p {
     text-align: justify;
 }
 
@@ -63,33 +63,33 @@ section p{
 .ui-state-default {
     border: none;
     border-bottom: 1px solid #c5c5c5;
-    &:hover{
-            background-color: $couleur1;
-    color: $couleur2;
+    &:hover {
+        background-color: $couleur1;
+        color: $couleur2;
     }
 }
 
-.ui-widget-content{
-    border:none;
+.ui-widget-content {
+    border: none;
 }
 
-.ui-accordion .ui-accordion-content{
+.ui-accordion .ui-accordion-content {
     padding: 0;
     height: auto;
 }
 
-#accordion ul a li{
+#accordion ul a li {
     padding: 40px 20px;
     border-bottom: 1px solid #c5c5c5;
     color: #f05f40;
 }
 
-#accordion ul a li:hover{
-background-color: $couleur1;
+#accordion ul a li:hover {
+    background-color: $couleur1;
     color: $couleur2;
 }
 
-.ui-widget-content a{
+.ui-widget-content a {
     text-decoration: none;
 }
 
