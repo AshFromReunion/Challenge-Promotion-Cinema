@@ -48,11 +48,13 @@ section {
   border: none; }
 
 .ui-accordion .ui-accordion-content {
-  padding: 0; }
+  padding: 0;
+  height: auto; }
 
 #accordion ul a li {
   padding: 40px 20px;
-  border-bottom: 1px solid #c5c5c5; }
+  border-bottom: 1px solid #c5c5c5;
+  color: #f05f40; }
 
 #accordion ul a li:hover {
   background-color: #f05f40;
