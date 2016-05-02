@@ -13,6 +13,9 @@ section a {
 .carousel-caption {
   bottom: 20%; }
 
+.visible {
+  visibility: visible; }
+
 /* DEBUT NAV */
 .navbar {
   margin-bottom: 0; }
@@ -39,6 +42,10 @@ section a {
 /* DEBUT CAROUSEL */
 #myCarousel {
   max-height: 95vh; }
+  #myCarousel .btn-default {
+    background-color: #f05f40;
+    color: #fafafa;
+    border: none; }
 
 /* FIN CAROUSEL */
 /* DEBUT SECTION */
@@ -104,6 +111,17 @@ section p {
 .fond-gris-clair {
   background-color: #444444;
   color: #fafafa; }
+
+.fa-chevron-up {
+  position: fixed;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  bottom: 20px;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 100px;
+  visibility: hidden; }
 
 /* FIN SECTION */
 /* DEBUT CONTACT */

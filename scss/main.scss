@@ -22,6 +22,10 @@ section a {
     bottom: 20%;
 }
 
+.visible {
+    visibility: visible;
+}
+
 
 /* DEBUT NAV */
 
@@ -61,6 +65,11 @@ section a {
 
 #myCarousel {
     max-height: 95vh;
+    .btn-default {
+        background-color: $couleur1;
+        color: $couleur2;
+        border: none;
+    }
 }
 
 
@@ -148,9 +157,20 @@ section p {
     color: $couleur2;
 }
 
+.fa-chevron-up {
+    position: fixed;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    bottom: 20px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 100px;
+    visibility: hidden;
+}
+
 
 /* FIN SECTION */
-
 
 
 /* DEBUT CONTACT */
@@ -182,37 +202,34 @@ footer {
 
 
 /* DEBUT DATE PICKER */
-.ui-datepicker td a.ui-state-default.ui-state-active{
-    color : white;
-   background: $couleur4; 
-    border-radius: 4px;  
-    
-}
 
-.ui-datepicker td a.ui-state-default{
-    border :none;
-    background: none;
-    
-}
-
-.ui-datepicker td a.ui-state-default:hover{
-    border :none;
-    
+.ui-datepicker td a.ui-state-default.ui-state-active {
+    color: white;
     background: $couleur4;
-    border-radius : 4px; 
-    
+    border-radius: 4px;
 }
 
-.ui-datepicker td a.ui-state-highlight{
-    color : white; 
-   background: $couleur1; 
-    border-radius: 4px; 
-    
+.ui-datepicker td a.ui-state-default {
+    border: none;
+    background: none;
+}
+
+.ui-datepicker td a.ui-state-default:hover {
+    border: none;
+    background: $couleur4;
+    border-radius: 4px;
+}
+
+.ui-datepicker td a.ui-state-highlight {
+    color: white;
+    background: $couleur1;
+    border-radius: 4px;
 }
 
 .ui-datepicker {
     margin: 30% auto 10%;
     border-radius: 5px;
-    
 }
+
+
 /* FIN DATE PICKER */

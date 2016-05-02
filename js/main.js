@@ -1,3 +1,14 @@
+// Scroll pour les liens
+$('a[href^="#liste-film"], a[href^="#contact"], a[href^="#captain-america"], a[href^="#batman-superman"], a[href^="#londre"], a[href^="#divergente"], a[href^="#panda"],a[href^="#five"],a[href^="#saint-amour"],a[href^="#lady-in-the-van"],a[href^="#boy"],a[href^="body"]').click(function () {
+    var the_id = $(this).attr("href");
+
+    $('html, body').animate({
+        scrollTop: $(the_id).offset().top
+    }, 'slow');
+    return false;
+});
+
+
 //MENU ACCORDEON  
 
 $(function () {
@@ -9,7 +20,6 @@ $(function () {
 });
 
 //DATE PICKER
-
 $('.datepicker').datepicker({});
 
 
@@ -30,12 +40,12 @@ $(window).scroll(
             // fixed
             $('#accordion').addClass("fixed");
             $('#liste-film').addClass("col-md-offset-2");
-
-
+            $(".fa-chevron-up").css('visibility', 'visible');
         } else {
             // unfixed
             $('#accordion').removeClass("fixed");
             $('#liste-film').removeClass("col-md-offset-2");
+            $(".fa-chevron-up").css('visibility', 'hidden');
         }
     }
 
