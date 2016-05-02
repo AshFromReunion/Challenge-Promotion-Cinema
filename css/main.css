@@ -75,7 +75,8 @@ section p {
 
 #accordion {
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  background-color: #f6f6f6; }
 
 .ui-accordion .ui-accordion-content {
   padding: 0;
