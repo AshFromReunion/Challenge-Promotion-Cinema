@@ -106,10 +106,6 @@ section p {
   color: #fafafa; }
 
 /* FIN SECTION */
-.ui-datepicker {
-  margin: 20px auto;
-  border-radius: 5px; }
-
 /* DEBUT CONTACT */
 #contact {
   padding: 100px; }
@@ -126,5 +122,30 @@ footer {
   padding: 30px 0; }
 
 /* FIN FOOTER */
+/* DEBUT DATE PICKER */
+.ui-datepicker td a.ui-state-default.ui-state-active {
+  color: white;
+  background: #444444;
+  border-radius: 4px; }
+
+.ui-datepicker td a.ui-state-default {
+  border: none;
+  background: none; }
+
+.ui-datepicker td a.ui-state-default:hover {
+  border: none;
+  background: #444444;
+  border-radius: 4px; }
+
+.ui-datepicker td a.ui-state-highlight {
+  color: white;
+  background: #f05f40;
+  border-radius: 4px; }
+
+.ui-datepicker {
+  margin: 30% auto 10%;
+  border-radius: 5px; }
+
+/* FIN DATE PICKER */
 
 /*# sourceMappingURL=main.css.map */
