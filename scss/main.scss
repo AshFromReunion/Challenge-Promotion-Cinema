@@ -100,32 +100,30 @@ section {
 
 /* debut date picker */
 
-.ui-datepicker td a.ui-state-default.ui-state-active {
-    color: white;
-    background: $couleur4;
-    border-radius: 4px;
-}
-
-.ui-datepicker td a.ui-state-default {
-    border: none;
-    background: none;
-}
-
-.ui-datepicker td a.ui-state-default:hover {
-    border: none;
-    background: $couleur4;
-    border-radius: 4px;
-}
-
-.ui-datepicker td a.ui-state-highlight {
-    color: white;
-    background: $couleur1;
-    border-radius: 4px;
-}
-
 .ui-datepicker {
     margin: 30% auto 10%;
     border-radius: 5px;
+    td {
+        a.ui-state-default.ui-state-active {
+            color: white;
+            background: $couleur4;
+            border-radius: 4px;
+        }
+        a.ui-state-default {
+            border: none;
+            background: none;
+        }
+        a.ui-state-default:hover {
+            border: none;
+            background: $couleur4;
+            border-radius: 4px;
+        }
+        a.ui-state-highlight {
+            color: white;
+            background: $couleur1;
+            border-radius: 4px;
+        }
+    }
 }
 
 
@@ -211,7 +209,7 @@ section {
     padding: 10px;
     border-radius: 100px;
     visibility: hidden;
-    &:hover{
+    &:hover {
         background-color: $couleur1;
     }
 }
@@ -223,7 +221,7 @@ section {
 /* DEBUT CONTACT */
 
 #contact {
-    padding: 100px;
+    padding: 100px 0;
     .fa {
         font-size: 40px;
     }
@@ -242,9 +240,13 @@ footer {
     background-color: $couleur1;
     color: $couleur2;
     padding: 30px 0;
+    a{
+        color:white;
+        &:hover{
+            color:white;
+        }
+    }
 }
 
 
 /* FIN FOOTER */
-
-
