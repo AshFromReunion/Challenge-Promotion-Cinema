@@ -14,6 +14,9 @@ section a {
   bottom: 20%; }
 
 /* DEBUT NAV */
+.navbar {
+  margin-bottom: 0; }
+
 .navbar-default {
   background-color: white;
   border: none; }
@@ -21,17 +24,21 @@ section a {
     color: #f05f40; }
   .navbar-default .navbar-nav > li > a {
     color: black; }
+    .navbar-default .navbar-nav > li > a:hover {
+      color: #fafafa; }
+
+.navbar-default .navbar-nav > li:hover {
+  background-color: #f05f40; }
 
 /* FIN NAV */
 .fixed {
   position: fixed;
-  top: 50px;
+  top: 0px;
   left: 0px; }
 
 /* DEBUT CAROUSEL */
 #myCarousel {
-  max-height: 95vh;
-  margin-top: 50px; }
+  max-height: 95vh; }
 
 /* FIN CAROUSEL */
 /* DEBUT SECTION */
@@ -47,7 +54,7 @@ section p {
 
 .ui-accordion .ui-accordion-header {
   margin-top: 0;
-  padding: 40px; }
+  padding: 30px; }
 
 .ui-state-default {
   border: none;
@@ -59,12 +66,16 @@ section p {
 .ui-widget-content {
   border: none; }
 
+#accordion {
+  height: 100%;
+  overflow: auto; }
+
 .ui-accordion .ui-accordion-content {
   padding: 0;
   height: auto; }
 
 #accordion ul a li {
-  padding: 40px 20px;
+  padding: 10px 20px;
   border-bottom: 1px solid #c5c5c5;
   color: #f05f40;
   font-size: 12px; }

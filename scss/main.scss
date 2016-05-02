@@ -25,6 +25,10 @@ section a {
 
 /* DEBUT NAV */
 
+.navbar {
+    margin-bottom: 0;
+}
+
 .navbar-default {
     background-color: white;
     border: none;
@@ -33,7 +37,14 @@ section a {
     }
     .navbar-nav > li > a {
         color: black;
+        &:hover {
+            color: $couleur2;
+        }
     }
+}
+
+.navbar-default .navbar-nav > li:hover {
+    background-color: $couleur1;
 }
 
 
@@ -41,7 +52,7 @@ section a {
 
 .fixed {
     position: fixed;
-    top: 50px;
+    top: 0px;
     left: 0px;
 }
 
@@ -50,7 +61,6 @@ section a {
 
 #myCarousel {
     max-height: 95vh;
-    margin-top: 50px;
 }
 
 
@@ -74,7 +84,7 @@ section p {
 
 .ui-accordion .ui-accordion-header {
     margin-top: 0;
-    padding: 40px;
+    padding: 30px;
 }
 
 .ui-state-default {
@@ -90,13 +100,18 @@ section p {
     border: none;
 }
 
+#accordion {
+    height: 100%;
+    overflow: auto;
+}
+
 .ui-accordion .ui-accordion-content {
     padding: 0;
     height: auto;
 }
 
 #accordion ul a li {
-    padding: 40px 20px;
+    padding: 10px 20px;
     border-bottom: 1px solid #c5c5c5;
     color: #f05f40;
     font-size: 12px;
