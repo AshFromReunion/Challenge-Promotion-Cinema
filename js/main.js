@@ -29,9 +29,11 @@ $('.datepicker').datepicker({});
 // FIXER LE MENU ACCORDEON
 var positionElementInPage = $('#accordion').offset().top;
 
+
 $(window).resize(function () {
 
     positionElementInPage = $('#accordion').offset().top;
+    
 
 });
 $(window).scroll(
@@ -60,3 +62,5 @@ $('.carousel-film-stop').carousel({
 $('#myCarousel').carousel({
     interval: 5000
 });
+
+
