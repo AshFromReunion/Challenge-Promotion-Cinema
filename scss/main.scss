@@ -6,10 +6,6 @@ body {
     background-color: $couleur2;
 }
 
-section a {
-    color: $couleur1;
-}
-
 .no-padding {
     padding: 0;
 }
@@ -29,26 +25,26 @@ section a {
 
 /* DEBUT NAV */
 
-.navbar {
-    margin-bottom: 0;
-}
-
 .navbar-default {
     background-color: white;
     border: none;
+    margin-bottom: 0;
     .navbar-brand {
         color: $couleur1;
     }
-    .navbar-nav > li > a {
-        color: black;
-        &:hover {
-            color: $couleur2;
+    .navbar-nav {
+        li {
+            &:hover {
+                background-color: $couleur1;
+            }
+            a {
+                color: black;
+                &:hover {
+                    color: $couleur2;
+                }
+            }
         }
     }
-}
-
-.navbar-default .navbar-nav > li:hover {
-    background-color: $couleur1;
 }
 
 
@@ -61,7 +57,7 @@ section a {
 }
 
 
-/* DEBUT CAROUSEL */
+/* DEBUT CAROUSEL PRINCIPAL */
 
 #myCarousel {
     max-height: 95vh;
@@ -73,28 +69,65 @@ section a {
 }
 
 
-/* FIN CAROUSEL */
+/* FIN CAROUSEL PRINCIPAL */
 
 
 /* DEBUT SECTION */
 
-section h3 {
-    color: $couleur1;
-    text-align: center;
+section {
+    h3 {
+        color: $couleur1;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    a {
+        color: $couleur1;
+    }
 }
 
-section p {
-    text-align: justify;
-}
+
+/*debut menu accordeon*/
 
 .fond-accordeon {
     background-color: #f6f6f6;
+    #accordion {
+        height: 100%;
+        overflow: auto;
+        background-color: #f6f6f6;
+        
+    
+        ul {
+            a {
+                li {
+                    padding: 10px 20px;
+                    border-bottom: 1px solid #c5c5c5;
+                    color: #f05f40;
+                    font-size: 12px;
+                    &:hover {
+                        background-color: $couleur1;
+                        color: $couleur2;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.ui-accordion .ui-accordion-header {
-    margin-top: 0;
-    padding: 30px;
-}
+ .ui-accordion {
+    .ui-accordion-header {
+        margin-top: 0;
+        padding: 30px;
+    }
+    .ui-accordion-content {
+        padding: 0;
+        height: auto;
+    }
+} 
+
+
+/*fin menu accordeon*/
 
 .ui-state-default {
     border: none;
@@ -107,29 +140,6 @@ section p {
 
 .ui-widget-content {
     border: none;
-}
-
-#accordion {
-    height: 100%;
-    overflow: auto;
-    background-color: #f6f6f6;
-}
-
-.ui-accordion .ui-accordion-content {
-    padding: 0;
-    height: auto;
-}
-
-#accordion ul a li {
-    padding: 10px 20px;
-    border-bottom: 1px solid #c5c5c5;
-    color: #f05f40;
-    font-size: 12px;
-}
-
-#accordion ul a li:hover {
-    background-color: $couleur1;
-    color: $couleur2;
 }
 
 .ui-widget-content a {

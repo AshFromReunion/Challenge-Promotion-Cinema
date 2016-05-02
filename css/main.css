@@ -1,9 +1,6 @@
 body {
   background-color: #fafafa; }
 
-section a {
-  color: #f05f40; }
-
 .no-padding {
   padding: 0; }
 
@@ -17,21 +14,18 @@ section a {
   visibility: visible; }
 
 /* DEBUT NAV */
-.navbar {
-  margin-bottom: 0; }
-
 .navbar-default {
   background-color: white;
-  border: none; }
+  border: none;
+  margin-bottom: 0; }
   .navbar-default .navbar-brand {
     color: #f05f40; }
-  .navbar-default .navbar-nav > li > a {
+  .navbar-default .navbar-nav li:hover {
+    background-color: #f05f40; }
+  .navbar-default .navbar-nav li a {
     color: black; }
-    .navbar-default .navbar-nav > li > a:hover {
+    .navbar-default .navbar-nav li a:hover {
       color: #fafafa; }
-
-.navbar-default .navbar-nav > li:hover {
-  background-color: #f05f40; }
 
 /* FIN NAV */
 .fixed {
@@ -39,7 +33,7 @@ section a {
   top: 0px;
   left: 0px; }
 
-/* DEBUT CAROUSEL */
+/* DEBUT CAROUSEL PRINCIPAL */
 #myCarousel {
   max-height: 95vh; }
   #myCarousel .btn-default {
@@ -47,22 +41,40 @@ section a {
     color: #fafafa;
     border: none; }
 
-/* FIN CAROUSEL */
+/* FIN CAROUSEL PRINCIPAL */
 /* DEBUT SECTION */
 section h3 {
   color: #f05f40;
   text-align: center; }
-
 section p {
   text-align: justify; }
+section a {
+  color: #f05f40; }
 
+/*debut menu accordeon*/
 .fond-accordeon {
   background-color: #f6f6f6; }
+  .fond-accordeon #accordion {
+    height: 100%;
+    overflow: auto;
+    background-color: #f6f6f6; }
+    .fond-accordeon #accordion ul a li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #c5c5c5;
+      color: #f05f40;
+      font-size: 12px; }
+      .fond-accordeon #accordion ul a li:hover {
+        background-color: #f05f40;
+        color: #fafafa; }
 
 .ui-accordion .ui-accordion-header {
   margin-top: 0;
   padding: 30px; }
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+  height: auto; }
 
+/*fin menu accordeon*/
 .ui-state-default {
   border: none;
   border-bottom: 1px solid #c5c5c5; }
@@ -72,25 +84,6 @@ section p {
 
 .ui-widget-content {
   border: none; }
-
-#accordion {
-  height: 100%;
-  overflow: auto;
-  background-color: #f6f6f6; }
-
-.ui-accordion .ui-accordion-content {
-  padding: 0;
-  height: auto; }
-
-#accordion ul a li {
-  padding: 10px 20px;
-  border-bottom: 1px solid #c5c5c5;
-  color: #f05f40;
-  font-size: 12px; }
-
-#accordion ul a li:hover {
-  background-color: #f05f40;
-  color: #fafafa; }
 
 .ui-widget-content a {
   text-decoration: none; }
