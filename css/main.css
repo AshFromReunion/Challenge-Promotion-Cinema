@@ -100,6 +100,14 @@ section a {
     background: #f05f40;
     border-radius: 4px; }
 
+.ui-datepicker-prev.ui-corner-all:before {
+  content: "\f177";
+  font-family: FontAwesome; }
+
+.ui-datepicker-next.ui-corner-all:before {
+  content: "\f178";
+  font-family: FontAwesome; }
+
 /* fin date picker */
 /*debut menu accordeon*/
 #menuGauche {

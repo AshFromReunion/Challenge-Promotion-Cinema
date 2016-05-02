@@ -156,6 +156,17 @@ section {
     }
 }
 
+.ui-datepicker-prev.ui-corner-all:before,
+ {
+    content: "\f177";
+    font-family: FontAwesome;
+}
+
+.ui-datepicker-next.ui-corner-all:before{
+        content: "\f178";
+    font-family: FontAwesome;
+}
+
 
 /* fin date picker */
 
