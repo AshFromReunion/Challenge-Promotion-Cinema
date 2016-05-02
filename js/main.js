@@ -7,3 +7,4 @@ $(function () {
 });
 
 //DATE PICKER
+$('.datepicker').datepicker({});

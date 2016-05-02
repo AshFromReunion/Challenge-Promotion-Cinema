@@ -23,6 +23,12 @@ section a {
     color: black; }
 
 /* FIN NAV */
+/* DEBUT CAROUSEL */
+#myCarousel {
+  max-height: 95vh;
+  margin-top: 50px; }
+
+/* FIN CAROUSEL */
 /* DEBUT SECTION */
 section h3 {
   color: #f05f40;
@@ -55,7 +61,8 @@ section p {
 #accordion ul a li {
   padding: 40px 20px;
   border-bottom: 1px solid #c5c5c5;
-  color: #f05f40; }
+  color: #f05f40;
+  font-size: 12px; }
 
 #accordion ul a li:hover {
   background-color: #f05f40;
