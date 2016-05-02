@@ -6,6 +6,16 @@ body {
     background-color: $couleur2;
 }
 
+.fond-gris-fonce {
+    background-color: $couleur3;
+    color: $couleur2;
+}
+
+.fond-gris-clair {
+    background-color: $couleur4;
+    color: $couleur2;
+}
+
 .no-padding {
     padding: 0;
 }
@@ -88,6 +98,40 @@ section {
 }
 
 
+/* debut date picker */
+
+.ui-datepicker td a.ui-state-default.ui-state-active {
+    color: white;
+    background: $couleur4;
+    border-radius: 4px;
+}
+
+.ui-datepicker td a.ui-state-default {
+    border: none;
+    background: none;
+}
+
+.ui-datepicker td a.ui-state-default:hover {
+    border: none;
+    background: $couleur4;
+    border-radius: 4px;
+}
+
+.ui-datepicker td a.ui-state-highlight {
+    color: white;
+    background: $couleur1;
+    border-radius: 4px;
+}
+
+.ui-datepicker {
+    margin: 30% auto 10%;
+    border-radius: 5px;
+}
+
+
+/* fin date picker */
+
+
 /*debut menu accordeon*/
 
 .fond-accordeon {
@@ -96,8 +140,6 @@ section {
         height: 100%;
         overflow: auto;
         background-color: #f6f6f6;
-        
-    
         ul {
             a {
                 li {
@@ -115,7 +157,7 @@ section {
     }
 }
 
- .ui-accordion {
+.ui-accordion {
     .ui-accordion-header {
         margin-top: 0;
         padding: 30px;
@@ -124,10 +166,11 @@ section {
         padding: 0;
         height: auto;
     }
-} 
+}
 
-
-/*fin menu accordeon*/
+.ui-corner-all {
+    border-radius: 0;
+}
 
 .ui-state-default {
     border: none;
@@ -154,30 +197,23 @@ section {
     border-radius: 0;
 }
 
-.ui-corner-all {
-    border-radius: 0;
-}
 
-.fond-gris-fonce {
-    background-color: $couleur3;
-    color: $couleur2;
-}
-
-.fond-gris-clair {
-    background-color: $couleur4;
-    color: $couleur2;
-}
+/*fin menu accordeon*/
 
 .fa-chevron-up {
+    opacity: 0.5;
     position: fixed;
     right: 10px;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     bottom: 20px;
     font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     padding: 10px;
     border-radius: 100px;
     visibility: hidden;
+    &:hover{
+        background-color: $couleur1;
+    }
 }
 
 
@@ -212,35 +248,3 @@ footer {
 /* FIN FOOTER */
 
 
-/* DEBUT DATE PICKER */
-
-.ui-datepicker td a.ui-state-default.ui-state-active {
-    color: white;
-    background: $couleur4;
-    border-radius: 4px;
-}
-
-.ui-datepicker td a.ui-state-default {
-    border: none;
-    background: none;
-}
-
-.ui-datepicker td a.ui-state-default:hover {
-    border: none;
-    background: $couleur4;
-    border-radius: 4px;
-}
-
-.ui-datepicker td a.ui-state-highlight {
-    color: white;
-    background: $couleur1;
-    border-radius: 4px;
-}
-
-.ui-datepicker {
-    margin: 30% auto 10%;
-    border-radius: 5px;
-}
-
-
-/* FIN DATE PICKER */

@@ -1,6 +1,14 @@
 body {
   background-color: #fafafa; }
 
+.fond-gris-fonce {
+  background-color: #222222;
+  color: #fafafa; }
+
+.fond-gris-clair {
+  background-color: #444444;
+  color: #fafafa; }
+
 .no-padding {
   padding: 0; }
 
@@ -51,90 +59,7 @@ section p {
 section a {
   color: #f05f40; }
 
-/*debut menu accordeon*/
-.fond-accordeon {
-  background-color: #f6f6f6; }
-  .fond-accordeon #accordion {
-    height: 100%;
-    overflow: auto;
-    background-color: #f6f6f6; }
-    .fond-accordeon #accordion ul a li {
-      padding: 10px 20px;
-      border-bottom: 1px solid #c5c5c5;
-      color: #f05f40;
-      font-size: 12px; }
-      .fond-accordeon #accordion ul a li:hover {
-        background-color: #f05f40;
-        color: #fafafa; }
-
-.ui-accordion .ui-accordion-header {
-  margin-top: 0;
-  padding: 30px; }
-.ui-accordion .ui-accordion-content {
-  padding: 0;
-  height: auto; }
-
-/*fin menu accordeon*/
-.ui-state-default {
-  border: none;
-  border-bottom: 1px solid #c5c5c5; }
-  .ui-state-default:hover {
-    background-color: #f05f40;
-    color: #fafafa; }
-
-.ui-widget-content {
-  border: none; }
-
-.ui-widget-content a {
-  text-decoration: none; }
-
-.ui-state-active,
-.ui-widget-content .ui-state-active,
-.ui-widget-header .ui-state-active {
-  background-color: #f05f40;
-  border: none;
-  border-radius: 0; }
-
-.ui-corner-all {
-  border-radius: 0; }
-
-.fond-gris-fonce {
-  background-color: #222222;
-  color: #fafafa; }
-
-.fond-gris-clair {
-  background-color: #444444;
-  color: #fafafa; }
-
-.fa-chevron-up {
-  position: fixed;
-  right: 10px;
-  color: rgba(255, 255, 255, 0.5);
-  bottom: 20px;
-  font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 100px;
-  visibility: hidden; }
-
-/* FIN SECTION */
-/* DEBUT CONTACT */
-#contact {
-  padding: 100px; }
-  #contact .fa {
-    font-size: 40px; }
-  #contact p {
-    font-size: 25px; }
-
-/* FIN CONTACT */
-/* DEBUT FOOTER */
-footer {
-  background-color: #f05f40;
-  color: #fafafa;
-  padding: 30px 0; }
-
-/* FIN FOOTER */
-/* DEBUT DATE PICKER */
+/* debut date picker */
 .ui-datepicker td a.ui-state-default.ui-state-active {
   color: white;
   background: #444444;
@@ -158,6 +83,84 @@ footer {
   margin: 30% auto 10%;
   border-radius: 5px; }
 
-/* FIN DATE PICKER */
+/* fin date picker */
+/*debut menu accordeon*/
+.fond-accordeon {
+  background-color: #f6f6f6; }
+  .fond-accordeon #accordion {
+    height: 100%;
+    overflow: auto;
+    background-color: #f6f6f6; }
+    .fond-accordeon #accordion ul a li {
+      padding: 10px 20px;
+      border-bottom: 1px solid #c5c5c5;
+      color: #f05f40;
+      font-size: 12px; }
+      .fond-accordeon #accordion ul a li:hover {
+        background-color: #f05f40;
+        color: #fafafa; }
+
+.ui-accordion .ui-accordion-header {
+  margin-top: 0;
+  padding: 30px; }
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+  height: auto; }
+
+.ui-corner-all {
+  border-radius: 0; }
+
+.ui-state-default {
+  border: none;
+  border-bottom: 1px solid #c5c5c5; }
+  .ui-state-default:hover {
+    background-color: #f05f40;
+    color: #fafafa; }
+
+.ui-widget-content {
+  border: none; }
+
+.ui-widget-content a {
+  text-decoration: none; }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  background-color: #f05f40;
+  border: none;
+  border-radius: 0; }
+
+/*fin menu accordeon*/
+.fa-chevron-up {
+  opacity: 0.5;
+  position: fixed;
+  right: 10px;
+  color: white;
+  bottom: 20px;
+  font-size: 25px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 100px;
+  visibility: hidden; }
+  .fa-chevron-up:hover {
+    background-color: #f05f40; }
+
+/* FIN SECTION */
+/* DEBUT CONTACT */
+#contact {
+  padding: 100px; }
+  #contact .fa {
+    font-size: 40px; }
+  #contact p {
+    font-size: 25px; }
+
+/* FIN CONTACT */
+/* DEBUT FOOTER */
+footer {
+  background-color: #f05f40;
+  color: #fafafa;
+  padding: 30px 0; }
+
+/* FIN FOOTER */
 
 /*# sourceMappingURL=main.css.map */
