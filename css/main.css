@@ -61,7 +61,7 @@ section a {
 
 /* debut date picker */
 .ui-datepicker {
-  margin: 5% auto;
+  margin: auto;
   border-radius: 5px; }
   .ui-datepicker td a.ui-state-default.ui-state-active {
     color: white;
@@ -81,11 +81,7 @@ section a {
 
 /* fin date picker */
 /*debut menu accordeon*/
-.test {
-  overflow: auto; }
-
-#menu-gauche {
-  height: 100%;
+#menuGauche {
   overflow: auto; }
 
 .fond-accordeon {
@@ -95,7 +91,8 @@ section a {
     overflow: auto;
     background-color: #f6f6f6; }
     .fond-accordeon #accordion ul a li {
-      padding: 10px 20px;
+      text-align: center;
+      padding: 8px 0px;
       border-bottom: 1px solid #c5c5c5;
       color: #f05f40;
       font-size: 12px; }
@@ -105,7 +102,7 @@ section a {
 
 .ui-accordion .ui-accordion-header {
   margin-top: 0;
-  padding: 30px; }
+  padding: 20px; }
 .ui-accordion .ui-accordion-content {
   padding: 0;
   height: auto; }

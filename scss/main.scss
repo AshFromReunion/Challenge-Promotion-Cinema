@@ -101,7 +101,7 @@ section {
 /* debut date picker */
 
 .ui-datepicker {
-  margin: 5% auto;
+  margin: auto;
     border-radius: 5px;
     td {
         a.ui-state-default.ui-state-active {
@@ -131,11 +131,7 @@ section {
 
 
 /*debut menu accordeon*/
-.test{
-    overflow: auto;
-}
-#menu-gauche{
-    height: 100%;
+#menuGauche{
      overflow: auto;
 }
 .fond-accordeon {
@@ -147,7 +143,8 @@ section {
         ul {
             a {
                 li {
-                    padding: 10px 20px;
+                    text-align: center;
+                    padding: 8px 0px;
                     border-bottom: 1px solid #c5c5c5;
                     color: #f05f40;
                     font-size: 12px;
@@ -164,7 +161,7 @@ section {
 .ui-accordion {
     .ui-accordion-header {
         margin-top: 0;
-        padding: 30px;
+        padding: 20px;
     }
     .ui-accordion-content {
         padding: 0;
