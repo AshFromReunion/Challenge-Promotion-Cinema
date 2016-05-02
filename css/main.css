@@ -61,7 +61,7 @@ section a {
 
 /* debut date picker */
 .ui-datepicker {
-  margin: 30% auto 10%;
+  /*  margin: 30% auto 10%; */
   border-radius: 5px; }
   .ui-datepicker td a.ui-state-default.ui-state-active {
     color: white;

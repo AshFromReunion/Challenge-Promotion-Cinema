@@ -23,29 +23,26 @@ $(function () {
 $('.datepicker').datepicker({});
 
 
-
-
-
 // FIXER LE MENU ACCORDEON
-var positionElementInPage = $('#accordion').offset().top;
+var positionElementInPage = $('#menuGauche').offset().top;
 
 
 $(window).resize(function () {
 
-    positionElementInPage = $('#accordion').offset().top;
-    
+    positionElementInPage = $('#menuGauche').offset().top;
+
 
 });
 $(window).scroll(
     function () {
         if ($(window).scrollTop() > positionElementInPage && $(window).width() > 992) {
             // fixed
-            $('#accordion').addClass("fixed");
+            $('#menuGauche').addClass("fixed");
             $('#liste-film').addClass("col-md-offset-2");
             $(".fa-chevron-up").css('visibility', 'visible');
         } else {
             // unfixed
-            $('#accordion').removeClass("fixed");
+            $('#menuGauche').removeClass("fixed");
             $('#liste-film').removeClass("col-md-offset-2");
             $(".fa-chevron-up").css('visibility', 'hidden');
         }
@@ -62,5 +59,3 @@ $('.carousel-film-stop').carousel({
 $('#myCarousel').carousel({
     interval: 5000
 });
-
-
