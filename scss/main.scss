@@ -36,11 +36,26 @@ body {
 /* DEBUT NAV */
 
 .navbar-default {
-    background-color: white;
+    background-color: $couleur3;
     border: none;
     margin-bottom: 0;
+    border-radius: 0;
+    .navbar-toggle {
+        float: left;
+        border: none;
+        &:focus,
+        &:hover {
+            background-color: transparent;
+        }
+        .icon-bar {
+            background-color: $couleur2;
+        }
+    }
     .navbar-brand {
         color: $couleur1;
+        &:hover {
+            color: $couleur2;
+        }
     }
     .navbar-nav {
         li {
@@ -48,7 +63,7 @@ body {
                 background-color: $couleur1;
             }
             a {
-                color: black;
+                color: $couleur2;
                 &:hover {
                     color: $couleur2;
                 }
@@ -71,6 +86,20 @@ body {
 
 #myCarousel {
     max-height: 95vh;
+    .carousel-indicators {
+        li {
+            border-radius: 0;
+            width: 100px;
+            height: 5px;
+            border: none;
+            background-color: $couleur2;
+        }
+    }
+    .carousel-indicators .active {
+        width: 100px;
+        height: 6px;
+        background-color: $couleur1;
+    }
     .btn-default {
         background-color: $couleur1;
         color: $couleur2;
@@ -188,10 +217,9 @@ section {
 
 .ui-widget-content {
     border: none;
-}
-
-.ui-widget-content a {
-    text-decoration: none;
+    a {
+        text-decoration: none;
+    }
 }
 
 .ui-state-active,
@@ -218,6 +246,12 @@ section {
     visibility: hidden;
     &:hover {
         background-color: $couleur1;
+    }
+}
+
+#sectionDroite {
+    hr {
+        opacity: 0.5;
     }
 }
 

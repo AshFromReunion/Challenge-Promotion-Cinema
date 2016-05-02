@@ -23,15 +23,25 @@ body {
 
 /* DEBUT NAV */
 .navbar-default {
-  background-color: white;
+  background-color: #222222;
   border: none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-radius: 0; }
+  .navbar-default .navbar-toggle {
+    float: left;
+    border: none; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #fafafa; }
   .navbar-default .navbar-brand {
     color: #f05f40; }
+    .navbar-default .navbar-brand:hover {
+      color: #fafafa; }
   .navbar-default .navbar-nav li:hover {
     background-color: #f05f40; }
   .navbar-default .navbar-nav li a {
-    color: black; }
+    color: #fafafa; }
     .navbar-default .navbar-nav li a:hover {
       color: #fafafa; }
 
@@ -44,6 +54,16 @@ body {
 /* DEBUT CAROUSEL PRINCIPAL */
 #myCarousel {
   max-height: 95vh; }
+  #myCarousel .carousel-indicators li {
+    border-radius: 0;
+    width: 100px;
+    height: 5px;
+    border: none;
+    background-color: #fafafa; }
+  #myCarousel .carousel-indicators .active {
+    width: 100px;
+    height: 6px;
+    background-color: #f05f40; }
   #myCarousel .btn-default {
     background-color: #f05f40;
     color: #fafafa;
@@ -121,9 +141,8 @@ section a {
 
 .ui-widget-content {
   border: none; }
-
-.ui-widget-content a {
-  text-decoration: none; }
+  .ui-widget-content a {
+    text-decoration: none; }
 
 .ui-state-active,
 .ui-widget-content .ui-state-active,
@@ -146,6 +165,9 @@ section a {
   visibility: hidden; }
   .fa-chevron-up:hover {
     background-color: #f05f40; }
+
+#sectionDroite hr {
+  opacity: 0.5; }
 
 /* FIN SECTION */
 /* DEBUT CONTACT */
