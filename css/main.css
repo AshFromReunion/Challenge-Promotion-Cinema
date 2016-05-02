@@ -61,7 +61,7 @@ section a {
 
 /* debut date picker */
 .ui-datepicker {
-  /*  margin: 30% auto 10%; */
+  margin: 5% auto;
   border-radius: 5px; }
   .ui-datepicker td a.ui-state-default.ui-state-active {
     color: white;
@@ -81,6 +81,13 @@ section a {
 
 /* fin date picker */
 /*debut menu accordeon*/
+.test {
+  overflow: auto; }
+
+#menu-gauche {
+  height: 100%;
+  overflow: auto; }
+
 .fond-accordeon {
   background-color: #f6f6f6; }
   .fond-accordeon #accordion {
@@ -144,7 +151,8 @@ section a {
 /* FIN SECTION */
 /* DEBUT CONTACT */
 #contact {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background-color: white; }
   #contact .fa {
     font-size: 40px; }
   #contact p {

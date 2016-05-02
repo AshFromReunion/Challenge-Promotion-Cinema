@@ -1,5 +1,5 @@
 // Scroll pour les liens
-$('a[href^="#liste-film"], a[href^="#contact"], a[href^="#captain-america"], a[href^="#batman-superman"], a[href^="#londre"], a[href^="#divergente"], a[href^="#panda"],a[href^="#five"],a[href^="#saint-amour"],a[href^="#lady-in-the-van"],a[href^="#boy"],a[href^="body"]').click(function () {
+$('a[href^="#sectionDroite"], a[href^="#contact"], a[href^="#captain-america"], a[href^="#batman-superman"], a[href^="#londre"], a[href^="#divergente"], a[href^="#panda"],a[href^="#five"],a[href^="#saint-amour"],a[href^="#lady-in-the-van"],a[href^="#boy"],a[href^="body"]').click(function () {
     var the_id = $(this).attr("href");
 
     $('html, body').animate({
@@ -38,12 +38,12 @@ $(window).scroll(
         if ($(window).scrollTop() > positionElementInPage && $(window).width() > 992) {
             // fixed
             $('#menuGauche').addClass("fixed");
-            $('#liste-film').addClass("col-md-offset-2");
+            $('#sectionDroite').addClass("col-md-offset-2");
             $(".fa-chevron-up").css('visibility', 'visible');
         } else {
             // unfixed
             $('#menuGauche').removeClass("fixed");
-            $('#liste-film').removeClass("col-md-offset-2");
+            $('#sectionDroite').removeClass("col-md-offset-2");
             $(".fa-chevron-up").css('visibility', 'hidden');
         }
     }

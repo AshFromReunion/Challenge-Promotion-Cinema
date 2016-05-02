@@ -101,7 +101,7 @@ section {
 /* debut date picker */
 
 .ui-datepicker {
-   /*  margin: 30% auto 10%; */
+  margin: 5% auto;
     border-radius: 5px;
     td {
         a.ui-state-default.ui-state-active {
@@ -131,7 +131,13 @@ section {
 
 
 /*debut menu accordeon*/
-
+.test{
+    overflow: auto;
+}
+#menu-gauche{
+    height: 100%;
+     overflow: auto;
+}
 .fond-accordeon {
     background-color: #f6f6f6;
     #accordion {
@@ -222,6 +228,7 @@ section {
 
 #contact {
     padding: 100px 0;
+    background-color: white;
     .fa {
         font-size: 40px;
     }
@@ -229,6 +236,9 @@ section {
         font-size: 25px;
     }
 }
+
+
+
 
 
 /* FIN CONTACT */
