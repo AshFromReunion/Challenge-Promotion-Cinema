@@ -23,6 +23,11 @@ section a {
     color: black; }
 
 /* FIN NAV */
+.fixed {
+  position: fixed;
+  top: 50px;
+  left: 0px; }
+
 /* DEBUT CAROUSEL */
 #myCarousel {
   max-height: 95vh;
@@ -90,6 +95,10 @@ section p {
   color: #fafafa; }
 
 /* FIN SECTION */
+.ui-datepicker {
+  margin: 20px auto;
+  border-radius: 5px; }
+
 /* DEBUT FOOTER */
 footer {
   background-color: #f05f40;

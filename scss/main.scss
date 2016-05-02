@@ -40,6 +40,13 @@ section a {
 
 /* FIN NAV */
 
+.fixed
+{
+    position : fixed;
+    top : 50px; 
+    left : 0px; 
+}
+
 /* DEBUT CAROUSEL */
 #myCarousel{
     max-height : 95vh; 
@@ -132,6 +139,11 @@ section p {
 
 /* FIN SECTION */
 
+.ui-datepicker{
+    margin : 20px auto; 
+    border-radius: 5px;
+    
+}
 
 /* DEBUT FOOTER */
 
