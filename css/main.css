@@ -82,7 +82,8 @@ section a {
 /* fin date picker */
 /*debut menu accordeon*/
 #menuGauche {
-  overflow: auto; }
+  overflow: auto;
+  max-height: 100%; }
 
 .fond-accordeon {
   background-color: #f6f6f6; }
