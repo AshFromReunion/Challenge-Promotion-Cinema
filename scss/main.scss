@@ -19,7 +19,6 @@ section a {
 }
 
 .carousel-caption {
-    
     bottom: 20%;
 }
 
@@ -40,24 +39,22 @@ section a {
 
 /* FIN NAV */
 
-.fixed
-{
-    position : fixed;
-    top : 50px; 
-    left : 0px; 
+.fixed {
+    position: fixed;
+    top: 50px;
+    left: 0px;
 }
+
 
 /* DEBUT CAROUSEL */
-#myCarousel{
-    max-height : 95vh; 
-    margin-top : 50px; 
-  
 
-    
-    
+#myCarousel {
+    max-height: 95vh;
+    margin-top: 50px;
 }
-/* FIN CAROUSEL */
 
+
+/* FIN CAROUSEL */
 
 
 /* DEBUT SECTION */
@@ -102,7 +99,7 @@ section p {
     padding: 40px 20px;
     border-bottom: 1px solid #c5c5c5;
     color: #f05f40;
-    font-size : 12px; 
+    font-size: 12px;
 }
 
 #accordion ul a li:hover {
@@ -139,18 +136,34 @@ section p {
 
 /* FIN SECTION */
 
-.ui-datepicker{
-    margin : 20px auto; 
+.ui-datepicker {
+    margin: 20px auto;
     border-radius: 5px;
-    
 }
+
+
+/* DEBUT CONTACT */
+
+#contact {
+    padding: 100px;
+    .fa {
+        font-size: 40px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
+
+
+/* FIN CONTACT */
+
 
 /* DEBUT FOOTER */
 
 footer {
     background-color: $couleur1;
     color: $couleur2;
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 
