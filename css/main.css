@@ -206,6 +206,58 @@ footer {
       color: white; }
 
 /* FIN FOOTER */
+/* DEBUT PROGRAMME */
+#programme {
+  position: fixed;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  background-color: black;
+  z-index: 100001;
+  color: white;
+  border-radius: 3px;
+  box-shadow: black -1px -1px 5px; }
+  #programme ul {
+    padding-left: 0px; }
+    #programme ul li {
+      list-style: none;
+      margin: 35px 0px;
+      font-weight: bold; }
+  #programme h5 {
+    color: #f05f40;
+    font-weight: bold; }
+
+#jour {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold; }
+
+#horaires {
+  padding-top: 25px;
+  color: #f05f40;
+  font-weight: bold; }
+
+#pageInactive {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100000; }
+
+.fa-times-circle-o {
+  position: absolute;
+  font-size: 26px;
+  right: -7px;
+  top: -7px; }
+
+.fa-times-circle-o:hover {
+  cursor: pointer;
+  color: #f05f40; }
+
+/* FIN PROGRAMME */
 /* DEBUT MEDIA QUERIES */
 @media (max-width: 991px) {
   /*navbar menu accordeon */
@@ -230,35 +282,27 @@ footer {
   section .navbar-collapse.collapse {
     display: none !important; }
   section .collapse.in {
-    display: block !important; } }
+    display: block !important; }
+
+  #programme {
+    position: fixed;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    background-color: black;
+    z-index: 100001;
+    color: white;
+    border-radius: 3px;
+    box-shadow: black -1px -1px 5px; }
+    #programme ul {
+      padding-left: 0px; }
+      #programme ul li {
+        list-style: none;
+        margin: 35px 0px;
+        font-weight: bold; }
+    #programme h5 {
+      color: #f05f40;
+      font-weight: bold; } }
 /* FIN MEDIA QUERIES */
-/* DEBUT PROGRAMME */
-#programme {
-  position: fixed;
-  top: 20%;
-  left: 25%;
-  width: 50%;
-  background-color: black;
-  z-index: 1000;
-  color: white;
-  border-radius: 3px;
-  box-shadow: black -1px -1px 5px; }
-  #programme ul {
-    padding-left: 0px; }
-    #programme ul li {
-      list-style: none;
-      margin: 35px 0px;
-      font-weight: bold; }
-
-#jour {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 32px;
-  font-weight: bold; }
-
-#horaires {
-  padding-top: 25px; }
-
-/* FIN PROGRAMME */
 
 /*# sourceMappingURL=main.css.map */
