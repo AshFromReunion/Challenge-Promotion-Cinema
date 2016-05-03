@@ -46,15 +46,18 @@
                     $('#menuGauche').addClass("fixed");
                     $('#sectionDroite').addClass("col-md-offset-2");
                 }
-
             } else {
                 // unfixed
                 $(".fa-chevron-up").css('visibility', 'hidden');
                 $('#menuGauche').removeClass("fixed");
                 $('#sectionDroite').removeClass("col-md-offset-2");
             }
+        }
+    );
 
-            if ($(window).scrollTop() > positionNavAccordeon - 5) {
+    $(window).scroll(
+        function () {
+            if ($(window).scrollTop() > positionNavAccordeon) {
                 if ($(window).width() < 992) {
                     $('#navAccordeon').addClass("fixed");
                 }
