@@ -1,5 +1,6 @@
 body {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  font-family: "Ralaway", sans-serif; }
 
 .fond-gris-fonce {
   background-color: #222222;
@@ -35,7 +36,9 @@ body {
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #fafafa; }
   .navbar-default .navbar-brand {
-    color: #f05f40; }
+    color: #f05f40;
+    font-family: 'Montez', cursive;
+    font-size: 40px; }
     .navbar-default .navbar-brand:hover {
       color: #fafafa; }
   .navbar-default .navbar-nav li:hover {
@@ -213,7 +216,9 @@ footer {
       section .navbar-default .navbar-header .navbar-toggle .icon-bar {
         background-color: #f05f40; }
       section .navbar-default .navbar-header .navbar-brand {
-        color: #222222; }
+        color: #222222;
+        font-family: sans-serif;
+        font-size: 20px; }
         section .navbar-default .navbar-header .navbar-brand:hover {
           color: #222222; }
     section .navbar-default .navbar-collapse {
