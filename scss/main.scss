@@ -89,14 +89,14 @@ body {
     .carousel-indicators {
         li {
             border-radius: 0;
-            width: 100px;
+            width: 10%;
             height: 5px;
             border: none;
             background-color: $couleur2;
         }
     }
     .carousel-indicators .active {
-        width: 100px;
+        width: 10%;
         height: 6px;
         background-color: $couleur1;
     }
@@ -157,13 +157,13 @@ section {
 }
 
 .ui-datepicker-prev.ui-corner-all:before,
- {
+{
     content: "\f177";
     font-family: FontAwesome;
 }
 
-.ui-datepicker-next.ui-corner-all:before{
-        content: "\f178";
+.ui-datepicker-next.ui-corner-all:before {
+    content: "\f178";
     font-family: FontAwesome;
 }
 
@@ -188,7 +188,7 @@ section {
             a {
                 li {
                     text-align: center;
-                    padding: 8px 0px;
+                    padding: 15px 0px;
                     border-bottom: 1px solid #c5c5c5;
                     color: #f05f40;
                     font-size: 12px;
@@ -205,7 +205,7 @@ section {
 .ui-accordion {
     .ui-accordion-header {
         margin-top: 0;
-        padding: 20px;
+        padding: 25px;
     }
     .ui-accordion-content {
         padding: 0;
