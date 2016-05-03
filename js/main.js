@@ -1,7 +1,6 @@
  // Scroll pour les liens
  $('a[href^="#sectionDroite"], a[href^="#contact"], a[href^="#captain-america"], a[href^="#batman-superman"], a[href^="#londre"], a[href^="#divergente"], a[href^="#panda"],a[href^="#five"],a[href^="#saint-amour"],a[href^="#lady-in-the-van"],a[href^="#boy"],a[href^="body"]').click(function () {
      var the_id = $(this).attr("href");
-
      $('html, body').animate({
          scrollTop: $(the_id).offset().top
      }, 'slow');
@@ -67,8 +66,6 @@
  );
 
 
-
-
  //STOPER LES CAROUSELS SECONDAIRES
  $('.carousel-film-stop').carousel({
      interval: false
@@ -78,7 +75,6 @@
  $('#myCarousel').carousel({
      interval: 5000
  });
-
 
 
  //FILMS

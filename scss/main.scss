@@ -67,9 +67,10 @@ body {
             }
             a {
                 color: $couleur2;
-                &:hover {
+                &:hover,&:focus {
                     color: $couleur2;
                 }
+                
             }
         }
     }
