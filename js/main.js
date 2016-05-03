@@ -20,7 +20,23 @@ $(function () {
 });
 
 //DATE PICKER
-$('.datepicker').datepicker({});
+$('.datepicker').datepicker({
+   
+//   minDate:-0, maxDate: "+10D",
+    
+    onSelect: function (dateText, inst) {
+        alert(dateText);
+    }
+    
+ 
+    
+    
+
+});
+
+
+
+
 
 
 // FIXER LE MENU ACCORDEON
@@ -35,16 +51,22 @@ $(window).resize(function () {
 });
 $(window).scroll(
     function () {
-        if ($(window).scrollTop() > positionElementInPage && $(window).width() > 992) {
+        if ($(window).scrollTop() > positionElementInPage-5) {
             // fixed
+            $(".fa-chevron-up").css('visibility', 'visible');
+            
+            if($(window).width() > 992){
             $('#menuGauche').addClass("fixed");
             $('#sectionDroite').addClass("col-md-offset-2");
-            $(".fa-chevron-up").css('visibility', 'visible');
+            }
         } else {
             // unfixed
+            $(".fa-chevron-up").css('visibility', 'hidden');
+            
+            
             $('#menuGauche').removeClass("fixed");
             $('#sectionDroite').removeClass("col-md-offset-2");
-            $(".fa-chevron-up").css('visibility', 'hidden');
+            
         }
     }
 
@@ -52,10 +74,23 @@ $(window).scroll(
 );
 
 
+
+//STOPER LES CAROUSELS SECONDAIRES
 $('.carousel-film-stop').carousel({
     interval: false
 });
 
+
 $('#myCarousel').carousel({
     interval: 5000
 });
+
+
+
+
+
+
+
+
+
+
