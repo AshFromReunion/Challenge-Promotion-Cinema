@@ -8055,11 +8055,11 @@ function Datepicker() {
 		monthNames: ["Janvier","Février","Mars","Avril","Mai","Juin",
 			"Juillet","Aout","Septembre","Octobre","Novembre","Decembre"], // Names of months for drop-down and formatting
 		monthNamesShort: ["Jan", "Fev", "Mars", "Avr", "Mai", "Juin", "Juil", "Aout", "Sept", "Oct", "Nov", "Dec"], // For formatting
-		dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], // For formatting
+		dayNames: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"], // For formatting
 		dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], // For formatting
 		dayNamesMin: ["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"], // Column headings for days starting at Sunday
 		weekHeader: "Wk", // Column header for week of the year
-		dateFormat: "dd/mm/yy", // See format options on parseDate
+		dateFormat: "DD dd MM yy ", // See format options on parseDate
 		firstDay: 0, // The first day of the week, Sun = 0, Mon = 1, ...
 		isRTL: false, // True if right-to-left language, false if left-to-right
 		showMonthAfterYear: false, // True if the year select precedes month, false for month then year

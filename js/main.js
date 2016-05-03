@@ -19,20 +19,7 @@ $(function () {
     });
 });
 
-//DATE PICKER
-$('.datepicker').datepicker({
-   
-//   minDate:-0, maxDate: "+10D",
-    
-    onSelect: function (dateText, inst) {
-        alert(dateText);
-    }
-    
- 
-    
-    
 
-});
 
 
 
@@ -90,7 +77,59 @@ $('#myCarousel').carousel({
 
 
 
+//TEST
+
+var films = ["Captain America","Batman V Superman : l'aube de la justice","Five","The Boy","La chute de Londres","Saint Amour","The Lady in the Van","Kung fu Panda","Divergente 3 : Au-delà du mur"];
+
+var horaires = ["10h30","14h10","16h25","18h50","21h10"];
+
+function hasardFilm() {
+        var nbAlea = Math.floor(Math.random() * films.length);
+        return nbAlea;
+    }
+
+    
+
+//DATE PICKER
+
+$('#programme').hide();
 
 
+$('.datepicker').datepicker({
+    
+   
+   
+//   minDate:-0, maxDate: "+10D",
+    
+    onSelect: function (dateText, inst) {
+        
+        
+        for (var i=0; i<10; i++) {
+            var position = hasardFilm();
+            this["seance"+i]=films[position];
+            films.splice(position,1);
+        }
+        
+        $('#programme').fadeIn("slow");
+        $('#jour').html(dateText);
+        $('#horaires').html("<li>"+horaires[0]+"</li><li>"+horaires[1]+"</li><li>"+horaires[2]+"</li><li>"+horaires[3]+"</li><li>"+horaires[4]+"</li>");
+        $('#seanceSalle1').html("<li>"+this.seance0+"</li><li>"+this.seance1+"</li><li>"+this.seance2+"</li><li>"+this.seance3+"</li><li>"+this.seance4+"</li>");
+        $('#seanceSalle2').html("<li>"+this.seance5+"</li><li>"+this.seance6+"</li><li>"+this.seance7+"</li><li>"+this.seance8+"</li><li>"+this.seance1+"</li>");
+        
+        
+        films = ["Captain America","Batman V Superman : l'aube de la justice","Five","The Boy","La chute de Londres","Saint Amour","The Lady in the Van","Kung fu Panda","Divergente 3 : Au-delà du mur"];
+      
+        $('section').css('filter','blur(2px)'); 
+        $('#myCarousel').css('filter','blur(2px)'); 
+        $('nav').css('filter','blur(2px)'); 
+        
+        
+        
+   
+    
+ 
+    }
+    
 
+});
 

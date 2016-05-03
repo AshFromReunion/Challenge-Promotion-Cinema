@@ -199,5 +199,33 @@ footer {
       color: white; }
 
 /* FIN FOOTER */
+/* DEBUT PROGRAMME */
+#programme {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  background-color: black;
+  z-index: 1000;
+  color: white;
+  border-radius: 3px;
+  box-shadow: black -1px -1px 5px; }
+  #programme ul {
+    padding-left: 0px; }
+    #programme ul li {
+      list-style: none;
+      margin: 35px 0px;
+      font-weight: bold; }
+
+#jour {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold; }
+
+#horaires {
+  padding-top: 25px; }
+
+/* FIN PROGRAMME */
 
 /*# sourceMappingURL=main.css.map */
