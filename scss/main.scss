@@ -310,6 +310,81 @@ footer {
 /* FIN FOOTER */
 
 
+
+
+
+
+/* DEBUT PROGRAMME */
+
+#programme{
+    position: fixed;
+    width : 50%;
+    top : 25%;
+    left : 25%; 
+    
+  
+    background-color: black;
+    z-index : 100001;
+    color :white; 
+    border-radius : 3px;
+    box-shadow: black -1px -1px 5px; 
+    ul{
+        padding-left : 0px;
+        li{
+            list-style: none;
+            margin : 35px 0px; 
+            font-weight: bold;
+        }
+    }
+    h5{
+        color : $couleur1;
+        font-weight : bold; 
+    }
+  
+}
+
+#jour{
+    text-align: center; 
+    margin-top : 20px;
+    font-size : 32px; 
+    font-weight : bold;
+   
+}
+
+#horaires{
+    padding-top : 25px;
+    color : $couleur1; 
+    font-weight : bold;
+}
+
+#pageInactive{
+    position : fixed;
+    width : 100%;
+    height : 100%;
+    top : 0%;
+    left : 0%; 
+    background-color : rgba(0,0,0,0.3);
+    z-index : 100000;
+    
+}
+
+.fa-times-circle-o{
+    position : absolute;
+    font-size : 26px; 
+    right : -7px; 
+    top : -7px; 
+}
+
+.fa-times-circle-o:hover{
+    cursor: pointer;
+    color: $couleur1; 
+}
+
+
+/* FIN PROGRAMME */
+
+
+
 /* DEBUT MEDIA QUERIES */
 
 @media (max-width: 991px) {
@@ -347,21 +422,16 @@ footer {
             display: block !important;
         }
     }
-}
-
-
-/* FIN MEDIA QUERIES */
-
-/* DEBUT PROGRAMME */
-
-#programme{
+    
+    #programme{
     position: fixed;
-    top : 20%;
-    left : 25%; 
-    width : 50%;
+    width : 80%;
+    top : 25%;
+    left : 10%; 
+    
   
     background-color: black;
-    z-index : 1000;
+    z-index : 100001;
     color :white; 
     border-radius : 3px;
     box-shadow: black -1px -1px 5px; 
@@ -373,20 +443,13 @@ footer {
             font-weight: bold;
         }
     }
+    h5{
+        color : $couleur1;
+        font-weight : bold; 
+    }
   
 }
-
-#jour{
-    text-align: center; 
-    margin-top : 20px;
-    font-size : 32px; 
-    font-weight : bold;
-}
-
-#horaires{
-    padding-top : 25px; 
 }
 
 
-
-/* FIN PROGRAMME */
+/* FIN MEDIA QUERIES */

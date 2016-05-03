@@ -44,14 +44,14 @@
 
                 if ($(window).width() > 991) {
                     $('#menuGauche').addClass("fixed");
-                    $('#sectionDroite').addClass("col-md-offset-2");
+                    $('#sectionDroite').addClass("col-md-offset-3");
                 }
 
             } else {
                 // unfixed
                 $(".fa-chevron-up").css('visibility', 'hidden');
                 $('#menuGauche').removeClass("fixed");
-                $('#sectionDroite').removeClass("col-md-offset-2");
+                $('#sectionDroite').removeClass("col-md-offset-3");
             }
 
             if ($(window).scrollTop() > positionNavAccordeon - 5) {
@@ -93,6 +93,7 @@
     //DATE PICKER
 
     $('#programme').hide();
+    $('#pageInactive').hide();
 
 
     $('.datepicker').datepicker({
@@ -111,6 +112,7 @@
             }
 
             $('#programme').fadeIn("slow");
+            $('#pageInactive').show();
             $('#jour').html(dateText);
             $('#horaires').html("<li>" + horaires[0] + "</li><li>" + horaires[1] + "</li><li>" + horaires[2] + "</li><li>" + horaires[3] + "</li><li>" + horaires[4] + "</li>");
             $('#seanceSalle1').html("<li>" + this.seance0 + "</li><li>" + this.seance1 + "</li><li>" + this.seance2 + "</li><li>" + this.seance3 + "</li><li>" + this.seance4 + "</li>");
@@ -129,6 +131,19 @@
 
 
         }
+        
+        
 
 
+    });
+
+
+        $('.fa-times-circle-o').click(function(){
+            $('section').css('filter','none');
+            $('#myCarousel').css('filter', 'none');
+            $('nav').css('filter', 'none');
+            $('#programme').fadeOut("slow");
+            $('#pageInactive').hide();
+        
+        
     });
