@@ -178,6 +178,11 @@ section {
     max-height: 100%;
 }
 
+#navAccordeon {
+    z-index: 99999;
+    width: 100%;
+}
+
 .fond-accordeon {
     background-color: #f6f6f6;
     #accordion {
@@ -303,3 +308,46 @@ footer {
 
 
 /* FIN FOOTER */
+
+
+/* DEBUT MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    /*navbar menu accordeon */
+    section {
+        .navbar-default {
+            background-color: $couleur2;
+            .navbar-header {
+                float: none;
+                .navbar-toggle {
+                    .icon-bar {
+                        background-color: $couleur1;
+                    }
+                }
+                .navbar-brand {
+                    color: $couleur3;
+                    &:hover {
+                        color: $couleur3;
+                    }
+                }
+            }
+            .navbar-collapse {
+                text-align: left;
+                box-shadow: none;
+                border: none;
+                .navbar-nav {
+                    width: 100%;
+                }
+            }
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .collapse.in {
+            display: block !important;
+        }
+    }
+}
+
+
+/* FIN MEDIA QUERIES */

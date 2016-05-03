@@ -114,6 +114,10 @@ section a {
   overflow: auto;
   max-height: 100%; }
 
+#navAccordeon {
+  z-index: 99999;
+  width: 100%; }
+
 .fond-accordeon {
   background-color: #f6f6f6; }
   .fond-accordeon #accordion {
@@ -199,5 +203,29 @@ footer {
       color: white; }
 
 /* FIN FOOTER */
+/* DEBUT MEDIA QUERIES */
+@media (max-width: 991px) {
+  /*navbar menu accordeon */
+  section .navbar-default {
+    background-color: #fafafa; }
+    section .navbar-default .navbar-header {
+      float: none; }
+      section .navbar-default .navbar-header .navbar-toggle .icon-bar {
+        background-color: #f05f40; }
+      section .navbar-default .navbar-header .navbar-brand {
+        color: #222222; }
+        section .navbar-default .navbar-header .navbar-brand:hover {
+          color: #222222; }
+    section .navbar-default .navbar-collapse {
+      text-align: left;
+      box-shadow: none;
+      border: none; }
+      section .navbar-default .navbar-collapse .navbar-nav {
+        width: 100%; }
+  section .navbar-collapse.collapse {
+    display: none !important; }
+  section .collapse.in {
+    display: block !important; } }
+/* FIN MEDIA QUERIES */
 
 /*# sourceMappingURL=main.css.map */
