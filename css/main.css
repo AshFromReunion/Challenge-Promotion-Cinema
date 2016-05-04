@@ -45,7 +45,7 @@ body {
     background-color: #f05f40; }
   .navbar-default .navbar-nav li a {
     color: #fafafa; }
-    .navbar-default .navbar-nav li a:hover {
+    .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
       color: #fafafa; }
 
 /* FIN NAV */
